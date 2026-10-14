@@ -1,4 +1,3 @@
-import streamlit as st
 from dotenv import load_dotenv
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 from langchain_groq import ChatGroq
@@ -12,7 +11,6 @@ chat_history: list[BaseMessage] = [
 ]
 
 while True:
-    
     user_input = input("You: ")
 
     if user_input.strip().lower() == "exit":
